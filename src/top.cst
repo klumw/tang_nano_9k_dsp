@@ -1,0 +1,43 @@
+IO_LOC  "clk" 52;
+
+IO_LOC  "dac_bclk" 26;
+IO_PORT "dac_bclk" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "dac_lrclk" 27;
+IO_PORT "dac_lrclk" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "dac_dat" 25;
+IO_PORT "dac_dat" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "mic_sck" 29;
+IO_PORT "mic_sck" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "mic_ws" 30;
+IO_PORT "mic_ws" DRIVE=8 IO_TYPE=LVCMOS33;
+
+IO_LOC  "mic_sd" 28;
+IO_PORT "mic_sd" IO_TYPE=LVCMOS33 PULL_MODE=DOWN;
+
+IO_LOC  "btn_s1" 3;
+IO_PORT "btn_s1" IO_TYPE=LVCMOS18;
+
+IO_LOC  "btn_vol" 77;
+IO_PORT "btn_vol" IO_TYPE=LVCMOS33;
+
+IO_LOC  "btn_s2" 4;
+IO_PORT "btn_s2" IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_vol[0]" 10;
+IO_PORT "led_vol[0]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_vol[1]" 11;
+IO_PORT "led_vol[1]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_vol[2]" 13;
+IO_PORT "led_vol[2]" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_4" 14;
+IO_PORT "led_4" DRIVE=8 IO_TYPE=LVCMOS18;
+
+IO_LOC  "led_5" 15;
+IO_PORT "led_5" DRIVE=8 IO_TYPE=LVCMOS18;
