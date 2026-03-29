@@ -88,10 +88,10 @@ module volume_control #(
     end
 
     // --- LED Mapping (Active High Internal Representation) ---
-    // Stufe 0 (0dB):   3'b111
-    // Stufe 1 (-6dB):  3'b011
-    // Stufe 2 (-12dB): 3'b001
-    // Stufe 3 (-18dB): 3'b000
+    // Level 0 (0dB):   3'b111
+    // Level 1 (-6dB):  3'b011
+    // Level 2 (-12dB): 3'b001
+    // Level 3 (-18dB): 3'b000
     always @(*) begin
         case (state)
             2'd0: led_vol = 3'b111;
