@@ -16,16 +16,21 @@ This project implements a high-quality digital audio processing pipeline on a Si
   - Visual status indication via onboard LEDs.
   - External volume button support.
 
-##Schematics
+## Schematics
 <img src="./docs/schematics_nano_9k_mic.png" width="1200" />
 
-##Components
-### 1.Sipeed Tang Nano 9K FPGA Board
+## Components
+### Sipeed Tang Nano 9K FPGA Board
 <img src="./docs/TangNano9K.png" width="500" />
-### 2.I2S Mems Microphone (e.g INMP441)
+
+### I2S Mems Microphone (e.g INMP441)
+
 <img src="./docs/inmp441.png" width="250" />
-### 3.I2S Audio Amplifier (e.g MAX98357A)
+
+### I2S Audio Amplifier (e.g MAX98357A)
+
 <img src="./docs/max98357a.png" width="250" />
+
 ## Hardware Connections
 
 ### Audio Modules
