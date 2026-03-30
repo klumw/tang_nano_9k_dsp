@@ -67,14 +67,14 @@ The volume control uses a "ping-pong" stepping mechanism:
 
 ## Building and Flashing
 
-This project uses the open-source FPGA toolchain (OSS CAD Suite), which is also available as
+This project uses the open-source FPGA toolchain [OSS CAD](https://github.com/yosyshq/oss-cad-suite-build)
 
 
 ### Prerequisites
 
 ### 1. Toolchain Installation
 
-This project requires the open-source Apicula (Gowin) toolchain. The fastest way to install all dependencies is via the OSS CAD Suite.
+This project requires the open-source Apicula (Gowin) toolchain. The fastest way to install all dependencies is via the [OSS CAD Suite](https://github.com/yosyshq/oss-cad-suite-build).
 
     Yosys: Synthesis
 
@@ -91,16 +91,12 @@ This project requires the open-source Apicula (Gowin) toolchain. The fastest way
 To develop within VSCode, install the following extensions:
 
     Verilog-HDL/SystemVerilog (Syntax & Linting)
+    
+    TeroHDL (additional Tools/Simulator)
 
     Tasks (Built-in automation)
 
 #### 3. Build & Flash
-
-The repository includes a .vscode/tasks.json to automate the flow.
-
-    Synthesize & Route: Press Ctrl + Shift + B (runs yosys -> nextpnr -> gowin_pack).
-
-    Flash Hardware: Press Cmd/Ctrl + Shift + P, type Run Task, and select Flash FPGA.
 
 
 ### Build
@@ -123,5 +119,5 @@ make flash
 
 ## Troubleshooting
 - **No Sound**: Verify that the microphone and DAC share the same ground. Check if bitstream loaded successfully.
-- **Distorted Audio**: Check the I2S wiring length (keep it short) and ensure the 3.3V supply is stable.
+- **Distorted Audio**: Check the I2S wiring length (keep it short), ensure that all pullup resistors are connected and 3.3V supply is stable.
 - **LEDs logic**: On the Tang Nano 9K, onboard LEDs are **active-low**. The logic in `top.v` accounts for this by inverting the status signals.
