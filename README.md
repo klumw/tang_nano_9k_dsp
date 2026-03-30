@@ -16,7 +16,7 @@ This project implements a high-quality digital audio processing pipeline on a Si
   - Visual status indication via onboard LEDs.
   - External volume button support.
 
-## Schematics
+## Additional Wirings
 <img src="./docs/schematics_nano_9k_mic.png" width="1200" />
 
 ## Components
